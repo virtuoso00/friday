@@ -539,23 +539,23 @@
 <p>输入层--&gt;隐藏层--&gt;输出层逐层的计算所有神经元输出值的过程。</p>
 <h4 id="error-backpropagation">误差逆传输（error BackPropagation）</h4>
 <p>由于输出层的值与真实值会存在误差，用均方误差来衡量预测值与真实值之间的误差</p>
-<p><img alt="1541230932231" src="//github.com/virtuoso00/friday/tree/master/docs/images/ML/1541230932231.png" /></p>
+<p><img alt="1541230932231" src="//github.com/virtuoso00/friday/blob/master/docs/images/ML/1541230932231.png" /></p>
 <p>逆向反馈的目标就是让E函数的值尽可能的小，而每个神经元的输出值是由该点的连接线对应的权重值和该层对应的偏好所决定的，因此，要让误差函数达到最小，我们就要调整w和b值， 使得误差函数的值最小。</p>
-<p><img alt="1541231067549" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231067549.png" /></p>
+<p><img alt="1541231067549" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231067549.png" /></p>
 <p>对目标函数 E 求 w 和 b 的偏导可以得到 w 和 b 的更新量，下面拿求 w 偏导来做推导</p>
-<p><img alt="1541231176817" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231176817.png" /></p>
+<p><img alt="1541231176817" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231176817.png" /></p>
 <p>其中 η 为学习率，取值通常为 0.1 ~ 0.3,可以理解为每次梯度所迈的步伐。注意到 w_hj 的值先影响到第 j 个输出层神经元的输入值a，再影响到输出值y，根据链式求导法则有</p>
-<p><img alt="1541231218514" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231218514.png" /></p>
+<p><img alt="1541231218514" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231218514.png" /></p>
 <p>根据神经元输出值 a 的定义有</p>
-<p><img alt="1541231294555" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231294555.png" /></p>
+<p><img alt="1541231294555" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231294555.png" /></p>
 <p>Sigmoid 求导数的式子如下 ：</p>
-<p><img alt="1541231329144" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231329144.png" /></p>
+<p><img alt="1541231329144" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231329144.png" /></p>
 <p>因而：</p>
-<p><img alt="1541231371846" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231371846.png" /></p>
+<p><img alt="1541231371846" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231371846.png" /></p>
 <p>则权重 w 的更新量为 ：</p>
-<p><img alt="1541231421542" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231421542.png" /></p>
+<p><img alt="1541231421542" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231421542.png" /></p>
 <p>同理可得b的更新量为：</p>
-<p><img alt="1541231471761" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231471761.png" /></p>
+<p><img alt="1541231471761" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231471761.png" /></p>
 <p>但这两个公式只能够更新输出层与前一层连接线的权重和输出层的偏置，原因是因为 δ 值依赖了真实值y这个变量，但是我们只知道输出层的真实值而不知道每层隐藏层的真实值，导致无法计算每层隐藏层的 δ 值，所以我们希望能够利用 <strong>i+1</strong> 层的 δ 值来计算 <strong>i</strong> 层的 δ 值，而恰恰通过一些列数学转换后可以做到，这也就是逆向反馈名字的由来，公式如下:</p>
 <p><img alt="1541231542232" src="https://github.com/virtuoso00/friday/tree/master/docs/images/ML/1541231542232.png" /></p>
 <p>从上面的式子，只需要知道下一层的权重的神经元输出层的值就可以计算出上一层的 δ 值 ，只要通过不断地利用上面的式子就可以就可以更新隐藏层的全部权重和偏置。</p>
