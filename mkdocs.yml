@@ -1,4 +1,34 @@
-site_name: Delete's Blog
-theme: 'material'
+site_name: Virtuoso's Blog
+theme: 
+  name: 'material'
+  language: 'zh'
+  palette:
+      primary: 'Grey'
+      accent: 'light blue'
 remote_branch: gh-pages
 remote_name: origin
+repo_url: 'https://github.com/virtuoso00/friday/'
+edit_uri: ''
+site_author: 'Virtuoso'
+copyright: Copyright &copy; Virtuoso All Rights Reserved.
+
+extra:
+  search:
+    language: 'en, jp'
+  repo_icon: 'github'
+  social:
+  - type: 'github'
+    link: 'https://github.com/virtuoso00/'
+  - type: 'envelope'
+    link: 'mailto:237977403@qq.com'
+
+# Documentation layout
+pages:
+    - 主页: 'index.md'
+    - 文章: 
+        - 'Machine learning导读': 'ML/index.md'
+        - '神经网络基础实战 - 多分类问题': 'ML/Neural network-Multiple categories.md'
+
+
+# Formatting options
+markdown_extensions: ['admonition', 'footnotes', 'meta', 'codehilite']
