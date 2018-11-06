@@ -1,0 +1,4 @@
+site_name: Delete's Blog
+theme: 'material'
+remote_branch: gh-pages
+remote_name: origin
