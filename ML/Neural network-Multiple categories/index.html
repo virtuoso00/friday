@@ -539,7 +539,7 @@
 <p>输入层--&gt;隐藏层--&gt;输出层逐层的计算所有神经元输出值的过程。</p>
 <h4 id="error-backpropagation">误差逆传输（error BackPropagation）</h4>
 <p>由于输出层的值与真实值会存在误差，用均方误差来衡量预测值与真实值之间的误差</p>
-<p><img alt="1541230932231" src="//github.com/virtuoso00/friday/blob/master/docs/images/ML/1541230932231.png" /></p>
+<p><img alt="1541230932231" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541230932231.png" /></p>
 <p>逆向反馈的目标就是让E函数的值尽可能的小，而每个神经元的输出值是由该点的连接线对应的权重值和该层对应的偏好所决定的，因此，要让误差函数达到最小，我们就要调整w和b值， 使得误差函数的值最小。</p>
 <p><img alt="1541231067549" src="https://github.com/virtuoso00/friday/blob/master/docs/images/ML/1541231067549.png" /></p>
 <p>对目标函数 E 求 w 和 b 的偏导可以得到 w 和 b 的更新量，下面拿求 w 偏导来做推导</p>
