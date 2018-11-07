@@ -1,9 +1,9 @@
-hero:您的光临,顿使蓬荜生辉！
+hero:There is no royal road to learning.
 
 <span id="comments_switch" hidden>False</span>
 
 # **Welcome to Virtuoso's blog**
-### 美丽的皮囊千篇一律，有趣的灵魂万里挑一
+**美丽的皮囊千篇一律，有趣的灵魂万里挑一**
 
 该博客用于 Virtuoso 个人记录，当然寻找有趣的灵魂也是重要目的
 
