@@ -3,7 +3,7 @@ theme:
   name: 'material'
   language: 'zh'
   palette:
-      primary: 'Grey'
+      primary: 'White'
       accent: 'light blue'
 remote_branch: gh-pages
 remote_name: origin
