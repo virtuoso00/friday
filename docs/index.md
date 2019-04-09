@@ -5,14 +5,14 @@ hero:There is no royal road to learning.
 # **Welcome to Virtuoso's blog**
 **Sow nothing, reap nothing.**
 
-该博客用于 Virtuoso 个人记录，当然寻找有趣的灵魂也是重要目的
+该博客用于 Virtuoso 个人记录 & 所思所想的分享
 
 ## 主要内容
 
 该博客包含 Virtuoso 学习中的心得体会、技术归纳总结、优秀读物的摘录以及课程实践等内容。文章内容多数和 Machine learning, Deep learning 相关</br> 
 详见 **[文章](ML/index.md)**
 
-当然代码文件也会提供给各位，如有问题欢迎联系，您的提问弥足珍贵</br>
+当然代码文件也会提供给各位。如有问题欢迎联系，您的提问弥足珍贵</br>
 详见 **[垃圾代码](projects/index.md)**
 
 ## 关于作者
