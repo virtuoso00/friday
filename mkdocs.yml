@@ -3,8 +3,8 @@ theme:
   name: 'material'
   language: 'zh'
   palette:
-      primary: 'White'
-      accent: 'light blue'
+      primary: 'Blue Grey'
+      accent: 'Light Blue'
 remote_branch: gh-pages
 remote_name: origin
 repo_url: 'https://github.com/virtuoso00/friday/'
